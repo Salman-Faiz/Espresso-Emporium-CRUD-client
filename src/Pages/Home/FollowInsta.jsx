@@ -7,14 +7,14 @@ const FollowInsta = () => {
             <h1 className="text-4xl font-bold">Follow On Instagram</h1>
             </div>
             <div className="grid grid-cols-2 mx-5 md:grid-cols-4  md:mx-80 gap-5">
-                <img src="/public/images/cups/Rectangle 9.png" alt="" />
-                <img src="/public/images/cups/Rectangle 10.png" alt="" />
-                <img src="/public/images/cups/Rectangle 11.png" alt="" />
-                <img src="/public/images/cups/Rectangle 12.png" alt="" />
-                <img src="/public/images/cups/Rectangle 13.png" alt="" />
-                <img src="/public/images/cups/Rectangle 14.png" alt="" />
-                <img src="/public/images/cups/Rectangle 15.png" alt="" />
-                <img src="/public/images/cups/Rectangle 16.png" alt="" />
+                <div><img src="/public/images/cups/Rectangle 9.png" alt="" /></div>
+                <div> <img src="/public/images/cups/Rectangle 10.png" alt="" /></div>
+                <div> <img src="/public/images/cups/Rectangle 11.png" alt="" /></div>
+                <div><img src="/public/images/cups/Rectangle 12.png" alt="" /></div>
+                <div><img src="/public/images/cups/Rectangle 13.png" alt="" /></div>
+                <div><img src="/public/images/cups/Rectangle 14.png" alt="" /></div>
+                <div><img src="/public/images/cups/Rectangle 15.png" alt="" /></div>
+                <div> <img src="/public/images/cups/Rectangle 16.png" alt="" /></div>    
             </div>
         </div>
     );
