@@ -5,7 +5,7 @@ import Header from '../Pages/Shared/Header/Header'
 
 const Root = () => {
     return (
-        <div >
+        <div>
             <Header></Header>
             <Outlet/>
         </div>

@@ -1,4 +1,7 @@
-.BannerBg{
+.BannerBg {
     background-image: url('/public/images/more/6.jpeg');
-    height: 750px;
+    min-height: 750px;
+ 
+    
+
 }

@@ -8,6 +8,10 @@ export default {
     extend: {
       fontFamily:{
         customFont : "'Playwrite US Modern', cursive ",
+      },
+      backgroundImage: {
+        // BannerBg:"url('/public/images/more/6.jpeg')"
+        
       }
     },
   },
@@ -15,4 +19,6 @@ export default {
     require('daisyui'),
   ],
 }
+
+
 
