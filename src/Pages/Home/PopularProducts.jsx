@@ -17,7 +17,7 @@ const PopularProducts = () => {
     
      <div className="grid md:grid-cols-2 gap-10 px-32 bg-PopularBg2 bg-no-repeat bg-right bg-opacity-100">
 
-     <div className="flex items-center bg-slate-50rounded-lg bg-opacity-50 shadow-lg gap-4">
+     <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg gap-4">
         <img className="p-5" src="/public/images/1.png" alt="" />
         <div className="text-lg space-y-3 flex-grow">
         <h2><span className="font-bold">Name:</span> Americano Coffee</h2>
@@ -30,7 +30,7 @@ const PopularProducts = () => {
             <h1><button className="btn btn-warning text-xl"><MdDelete></MdDelete></button></h1>
         </div>
       </div>
-     <div className="flex items-center bg-slate-50 rounded-lg bg-opacity-50 shadow-lg gap-4">
+     <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg gap-4">
         <img className="p-5" src="/public/images/2.png" alt="" />
         <div className="text-lg space-y-3 flex-grow">
         <h2><span className="font-bold">Name:</span>Espresso Coffee </h2>
@@ -43,7 +43,7 @@ const PopularProducts = () => {
             <h1><button className="btn btn-warning text-xl"><MdDelete></MdDelete></button></h1>
         </div>
       </div>
-     <div className="flex items-center bg-slate-50 rounded-lg bg-opacity-50 shadow-lg gap-4">
+     <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg gap-4">
         <img className="p-5" src="/public/images/3.png" alt="" />
         <div className="text-lg space-y-3 flex-grow">
         <h2><span className="font-bold">Name:</span> Black Coffee</h2>
@@ -59,7 +59,7 @@ const PopularProducts = () => {
             <h1><button className="btn btn-warning text-xl"><MdDelete></MdDelete></button></h1>
         </div>
       </div>
-     <div className="flex items-center bg-slate-50 rounded-lg bg-opacity-50 shadow-lg gap-4">
+     <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg gap-4">
         <img className="p-5" src="/public/images/4.png" alt="" />
         <div className="text-lg space-y-3 flex-grow">
         <h2><span className="font-bold">Name:</span>Decaf Coffee</h2>
@@ -74,7 +74,7 @@ const PopularProducts = () => {
             <h1><button className="btn btn-warning text-xl"><MdDelete></MdDelete></button></h1>
         </div>
       </div>
-     <div className="flex items-center bg-slate-50 rounded-lg bg-opacity-50 shadow-lg gap-4">
+     <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg gap-4">
         <img className="p-5" src="/public/images/5.png" alt="" />
         <div className="text-lg space-y-3 flex-grow">
         <h2><span className="font-bold">Name:</span>Macchiato</h2>
@@ -88,7 +88,7 @@ const PopularProducts = () => {
             <h1><button className="btn btn-warning text-xl"><MdDelete></MdDelete></button></h1>
         </div>
       </div>
-     <div className="flex items-center bg-slate-50 rounded-lg bg-opacity-50 shadow-lg gap-4">
+     <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg gap-4">
         <img className="p-5" src="/public/images/6.png" alt="" />
         <div className="text-lg space-y-3 flex-grow">
         <h2><span className="font-bold">Name:</span>Cappuccino Coffee</h2>
