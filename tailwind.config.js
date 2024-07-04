@@ -10,7 +10,8 @@ export default {
         customFont : "'Playwrite US Modern', cursive ",
       },
       backgroundImage: {
-        // BannerBg:"url('/public/images/more/6.jpeg')"
+        PopularBg1:"url('/public/images/more/4.png')",
+        PopularBg2:"url('/public/images/more/5.png')"
         
       }
     },
