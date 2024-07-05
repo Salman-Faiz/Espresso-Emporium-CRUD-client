@@ -11,8 +11,9 @@ export default {
       },
       backgroundImage: {
         PopularBg1:"url('/public/images/more/4.png')",
-        PopularBg2:"url('/public/images/more/5.png')"
-        
+        PopularBg2:"url('/public/images/more/5.png')",
+        footerBg: "url('/public/images/more/13.jpg')",
+        lastFooter: "url('/public/images/more/8.png')",
       }
     },
   },
