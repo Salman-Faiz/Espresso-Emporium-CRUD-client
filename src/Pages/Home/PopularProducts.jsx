@@ -8,7 +8,7 @@ const PopularProducts = () => {
     <div className="font-customFont text-yellow-950">
       <div className=" text-center font-customFont space-y-8 py-20 text-yellow-950 bg-PopularBg1 bg-no-repeat bg-left-bottom">
         <p className="text-xl text-yellow-950">--Sip & Savor--</p>
-        <h1 className="text-4xl font-bold">Our Popular Products</h1>
+        <h1 className="text-4xl font-bold pb-6">Our Popular Products</h1>
         <Link to={'/addcoffee'}>
           <button className="btn border-2 border-yellow-950 bg-amber-300 text-yellow-950 font-bold">
             Add Coffee <PiCoffeeDuotone className="text-xl"></PiCoffeeDuotone>
