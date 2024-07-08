@@ -9,6 +9,7 @@ import './index.css'
 import Root from './Layouts/Root';
 import Home from './Pages/Home/Home';
 import AddCoffee from './Pages/AddCoffee/AddCoffee';
+import Update from './Pages/Update/Update';
 
 
 const router = createBrowserRouter([
@@ -18,12 +19,19 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: ()=>fetch('http://localhost:5000/coffee')
       },
       {
         path:'/addcoffee',
         element:<AddCoffee></AddCoffee>
+      },
+      {
+        path:'/update/:id',
+        element:<Update></Update>,
+        loader:({params})=>fetch(`http://localhost:5173/coffee/${params.id}`)
       }
+      
     ]
   },
 ]);
