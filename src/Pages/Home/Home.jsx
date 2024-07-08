@@ -4,9 +4,6 @@ import FollowInsta from "./FollowInsta";
 import PopularProducts from "./PopularProducts";
 import { PiCoffeeDuotone } from "react-icons/pi";
 
-
-
-
 const Home = () => {
   const coffees = useLoaderData();
   // console.log(coffees.length)
@@ -26,7 +23,8 @@ const Home = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-10 md:px-32 bg-PopularBg2 bg-no-repeat bg-right bg-opacity-100">
         {coffees.map((coffee, idx) => (
-          <PopularProducts coffee={coffee} key={idx}></PopularProducts>
+          <PopularProducts coffee={coffee} key={idx}
+         ></PopularProducts>
         ))}
       </div>
 

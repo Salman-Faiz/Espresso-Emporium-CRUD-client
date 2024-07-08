@@ -6,30 +6,38 @@ import Swal from "sweetalert2";
 import { useState } from "react";
 
 const PopularProducts = ({ coffee }) => {
-  // const [coffees, setCoffees]= useState(coffee)
-  // console.log(coffee,'cococo')
   const { _id, name, chef, photo } = coffee;
 
   // handle delete operation
   const handleDelete = async (_id) => {
     console.log(_id);
-    
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        const response = await fetch("http://localhost:5000/coffee/" + _id, {
+          method: "DELETE",
+        });
 
-    const response = await fetch("http://localhost:5000/coffee/" + _id, {
-      method: "DELETE",
+        const json = await response.json();
+
+        console.log("data is", json.data);
+        if (json.data.deletedCount > 0) {
+          
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your Coffee has been deleted.",
+            icon: "success",
+          });
+        }
+      }
     });
-
-    const json = await response.json();
-
-    console.log('data is', json.data);
-    if (json.data.deletedCount > 0) {
-                Swal.fire({
-                  title: "Deleted!",
-                  text: "Your file has been deleted.",
-                  icon: "success",
-                });
-              }
-
   };
 
   return (
