@@ -43,10 +43,10 @@ const PopularProducts = ({ coffee,coffees,setCoffees }) => {
   };
 
   return (
-    <div className="">
-      <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg justify-evenly">
-        <div className="rounded-lg">
-          <img className="w-64 h-48 p-5 rounded-lg" src={photo} alt="" />
+    
+      <div className="flex items-center bg-slate-100 rounded-lg bg-opacity-50 shadow-lg justify-between">
+        <div className="rounded-xl ">
+          <img className="w-64 h-48  rounded-l-xl " src={photo} alt="" />
         </div>
         <div className="text-lg space-y-3  ">
           <h2>
@@ -57,7 +57,6 @@ const PopularProducts = ({ coffee,coffees,setCoffees }) => {
             {chef}
           </h2>
           <h3>
-            {" "}
             <span className="font-bold">Price :</span>890 Taka
           </h3>
         </div>
@@ -84,7 +83,7 @@ const PopularProducts = ({ coffee,coffees,setCoffees }) => {
           </h1>
         </div>
       </div>
-    </div>
+   
   );
 };
 

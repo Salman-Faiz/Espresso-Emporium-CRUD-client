@@ -1,5 +1,6 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Update = () => {
   const coffee = useLoaderData();
@@ -34,8 +35,13 @@ const Update = () => {
     .then(data =>{
         console.log(data)
         if(data.modifiedCount>0){
-            alert('coffee data updated successfully')
-            form.defaultValue='';
+            Swal.fire({
+                title: "Success",
+                text: "Coffee updated successfully",
+                icon: "success",
+                confirmButtonText: "Cool",
+              });
+              form.target.reset();
         }
     })
 }

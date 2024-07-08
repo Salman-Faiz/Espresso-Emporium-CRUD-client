@@ -10,7 +10,7 @@ import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="">
-      <div className="md:bg-footerBg h-[45rem] grid md:grid-cols-2 justify-center font-customFont pt-16 mt-20">
+      <div className="md:bg-footerBg max-h-[45rem] grid md:grid-cols-2 justify-center font-customFont pt-16 mt-20">
         <div className="w-1/3 ps-10 space-y-4 sm:mx-auto">
           <img src="/public/images/more/logo1.png" className="w-20" alt="" />
           <h1 className="text-2xl font-extrabold">Espresso Emporium</h1>
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[url('/public/images/more/24.jpg')]">
-        <p className="text-white font-bold text-xl text-center py-2">CopyRight Espresso Emporium 2024</p>
+        <p className="text-white font-bold text-sm text-center py-2">CopyRight Espresso Emporium 2024</p>
       </div>
     </div>
   );
