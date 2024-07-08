@@ -3,9 +3,8 @@ import { BiSolidPencil } from "react-icons/bi";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { useState } from "react";
 
-const PopularProducts = ({ coffee }) => {
+const PopularProducts = ({ coffee,coffees,setCoffees }) => {
   const { _id, name, chef, photo } = coffee;
 
   // handle delete operation
@@ -35,6 +34,9 @@ const PopularProducts = ({ coffee }) => {
             text: "Your Coffee has been deleted.",
             icon: "success",
           });
+          const remainingCoffee =coffees.filter(coffee => coffee._id !== _id)
+            setCoffees(remainingCoffee);
+          
         }
       }
     });
@@ -66,7 +68,7 @@ const PopularProducts = ({ coffee }) => {
             </button>
           </h1>
           <h1>
-            <Link to={`update/${_id}`}>
+            <Link to={`updateCoffee/${_id}`}>
               <button className="btn btn-info text-xl">
                 <BiSolidPencil></BiSolidPencil>
               </button>

@@ -3,9 +3,11 @@ import Banner from "./Banner/Banner";
 import FollowInsta from "./FollowInsta";
 import PopularProducts from "./PopularProducts";
 import { PiCoffeeDuotone } from "react-icons/pi";
+import { useState } from "react";
 
 const Home = () => {
-  const coffees = useLoaderData();
+  const loadCoffees = useLoaderData();
+  const [coffees,setCoffees] =useState(loadCoffees);
   // console.log(coffees.length)
   return (
     <div>
@@ -22,8 +24,8 @@ const Home = () => {
         </div>
       </div>
       <div className="grid md:grid-cols-2 gap-10 md:px-32 bg-PopularBg2 bg-no-repeat bg-right bg-opacity-100">
-        {coffees.map((coffee, idx) => (
-          <PopularProducts coffee={coffee} key={idx}
+        {loadCoffees.map((coffee, idx) => (
+          <PopularProducts coffee={coffee} key={idx} coffees={coffees} setCoffees={setCoffees}
          ></PopularProducts>
         ))}
       </div>
