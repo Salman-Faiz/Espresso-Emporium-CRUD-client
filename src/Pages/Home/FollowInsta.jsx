@@ -1,7 +1,7 @@
 
 const FollowInsta = () => {
     return (
-        <div>
+        <div className="">
             <div className="text-center font-customFont text-yellow-950 py-20 space-y-8">
             <p className="text-xl text-yellow-950">--Follow Us Now--</p>
             <h1 className="text-4xl font-bold">Follow On Instagram</h1>

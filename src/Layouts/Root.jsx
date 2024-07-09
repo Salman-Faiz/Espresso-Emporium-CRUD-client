@@ -4,9 +4,12 @@ import Footer from "../Pages/Shared/Footer";
 
 const Root = () => {
   return (
-    <div className="font-customFont max-w-8xl mx-auto">
+    <div className="font-customFont max-w-8xl mx-auto flex flex-col min-h-screen">
       <Header></Header>
-      <Outlet />
+      <div className="flex-grow">
+         <Outlet/>   
+        </div>
+      
       <Footer></Footer>
     </div>
   );

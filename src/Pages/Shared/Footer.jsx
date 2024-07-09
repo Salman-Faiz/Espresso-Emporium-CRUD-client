@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[url('/public/images/more/24.jpg')]  ">
-        <p className="text-white font-bold text-sm text-center py-2 ">
+        <p className="text-white font-bold text-sm text-center py-2 max-h-screen bottom-0">
           CopyRight Espresso Emporium 2024
         </p>
       </div>
