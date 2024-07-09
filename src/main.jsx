@@ -10,6 +10,9 @@ import Root from './Layouts/Root';
 import Home from './Pages/Home/Home';
 import AddCoffee from './Pages/AddCoffee/AddCoffee';
 import Update from './Pages/Update/Update';
+import SignIn from './Pages/SignIn/SignIn';
+import SignUp from './Pages/SignUp/SignUp';
+import Users from './Pages/Users/Users';
 
 
 const router = createBrowserRouter([
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
         path:'/updateCoffee/:id',
         element:<Update></Update>,
         loader: ({params})=>fetch(`http://localhost:5000/coffee/${params.id}`)
+      },
+      {
+        path:'/signIn',
+        element:<SignIn></SignIn>
+      },
+      {
+        path:'/signUp',
+        element:<SignUp></SignUp>
+      },
+      {
+        path:'/users',
+        element:<Users></Users>
       }
       
     ]

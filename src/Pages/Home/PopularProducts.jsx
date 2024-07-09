@@ -1,11 +1,15 @@
 import { FaEye } from "react-icons/fa";
 import { BiSolidPencil } from "react-icons/bi";
 import { MdDelete } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import { useState } from "react";
 
-const PopularProducts = ({ coffee,coffees,setCoffees }) => {
+const PopularProducts = ({ coffee ,coffees,setCoffees}) => {
   const { _id, name, chef, photo } = coffee;
+  // const demoo = useLoaderData();
+  // console.log(demoo)
+  // const [coffees,setCoffees] =useState(demoo);
 
   // handle delete operation
   const handleDelete = async (_id) => {
