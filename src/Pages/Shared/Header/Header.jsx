@@ -21,7 +21,7 @@ const Header = () => {
     </>
   );
   return (
-    <nav className="bg-[url('/public/images/more/15.jpg')] p-4">
+    <nav className="bg-[url('/public/images/more/15.jpg')] p-4 ">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left empty div for spacing */}
         <div className="flex-1"></div>

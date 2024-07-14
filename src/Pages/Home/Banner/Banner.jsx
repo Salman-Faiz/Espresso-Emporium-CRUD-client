@@ -3,7 +3,7 @@ import BannerBottom from './BannerBottom';
 const Banner = () => {
     return ( 
      <div className=''>
-           <div className='relative BannerBg flex items-center h-[20rem] lg:h-[50rem]  font-customFont bg-cover bg-no-repeat '>
+           <div className='h-[calc(100vh-250px)] min-h-[400px] relative BannerBg flex items-center    font-customFont bg-cover bg-no-repeat '>
         <div className='px-5  text-white md:space-y-8 absolute md:left-40'>
         <h2 className='text-xl md:text-4xl '>Would you like a Cup of Delicious Coffee?</h2>
           <p className='sm:xs'>Its coffee time - Sip & Savor - Relaxation in every sip! Get the nostalgia back!!<br></br> Your companion of every moment!!!<br></br> Enjoy the beautiful moments and make them memorable.</p>
